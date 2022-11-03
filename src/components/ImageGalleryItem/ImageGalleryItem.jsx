@@ -7,7 +7,9 @@ export const ImageGalleryItem = ({ imageData, modalImage, toggleModal }) => {
         className={css.ImageGalleryItem_image}
         src={imageData.webformatURL}
         alt={imageData.tags}
-        onClick={() => (modalImage(), toggleModal())}
+        onClick={() => {
+          modalImage(), toggleModal();
+        }}
       />
     </li>
   );
