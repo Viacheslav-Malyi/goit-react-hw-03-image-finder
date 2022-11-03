@@ -45,6 +45,7 @@ export class App extends Component {
       } catch (err) {
         this.setState({ status: 'rejected' });
         Notification();
+        console.log('1');
       }
     }
   }
