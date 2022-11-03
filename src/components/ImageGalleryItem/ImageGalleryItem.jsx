@@ -8,7 +8,8 @@ export const ImageGalleryItem = ({ imageData, modalImage, toggleModal }) => {
         src={imageData.webformatURL}
         alt={imageData.tags}
         onClick={() => {
-          modalImage(), toggleModal();
+          modalImage();
+          toggleModal();
         }}
       />
     </li>
